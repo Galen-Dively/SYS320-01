@@ -28,7 +28,7 @@ function daysTranslator($FullTable){
         $Days = @()
 
         if ($FullTable[$i].Days -ilike "M*") {$Days += "Monday"}
-        if($FullTable[$i].Days -ilike "*[TWF]*") {$Days += "Tuesday"}
+        if($FullTable[$i].Days -ilike "*T[TWF]*") {$Days += "Tuesday"}
         elseif($FullTable[$i].Days -ilike "T") {$Days += "Tuesday"}
         if($FullTable[$i].Days -ilike "W") {$Days += "Wednesday"}
         if($FullTable[$i].Days -ilike "*TH*") {$Days += "Thursday"}
