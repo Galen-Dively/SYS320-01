@@ -55,15 +55,7 @@ function get_available()
 {
 	echo "Please Enter A Course Code ex. SEC: "
 	read course_code
-	available=()
-	courses=$(cat $courseFile | grep "$course_code" | cut -d ';' -f4)
-	for i in $(cat $courseFile | grep "$course_code" | cut -d ';' -f4); do
-		if [ $i -le 1 ]; then
-			echo "No no no please no"
-		else
-			echo "Available"
-		fi
-	done
+	cat $courseFile | grep "$course_code" | awk -F';' '$4 > 0' | sed 's/;/ | /g'
 }
 
 while :
