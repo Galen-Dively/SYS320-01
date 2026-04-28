@@ -1,0 +1,10 @@
+To: galen.dively@mymail.champlain.edu
+Subject: Failed Logins
+
+Apr 28 12:57:15 invalid badperson
+Apr 28 12:57:20 invalid badperson
+Apr 28 12:57:24 invalid badperson
+Apr 28 13:02:31 champuser 127.0.0.1
+Apr 28 13:02:36 champuser 127.0.0.1
+Apr 28 13:02:40 champuser 127.0.0.1
+Apr 28 13:04:18 ; ;
